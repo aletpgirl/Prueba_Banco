@@ -1,0 +1,3 @@
+MigrationId,ProductVersion
+00000000000000_CreateIdentitySchema,6.0.10
+20221206233940_crearTabla,6.0.10
