@@ -1,0 +1,129 @@
+﻿@model Prueba_Banco.Models.Ventas
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ventas</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODGTE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODGTE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NOMGTE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NOMGTE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODCOOR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODCOOR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NOMCOOR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NOMCOOR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODVENTAS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODVENTAS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NOMVEND)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NOMVEND)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CODNIVEL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CODNIVEL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NOMNIVEL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NOMNIVEL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NIT_CLIENTE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NIT_CLIENTE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ITEM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ITEM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NOM_CLIENTE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NOM_CLIENTE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SEGMENTO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SEGMENTO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GERENCIADO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GERENCIADO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OFICINA_CLIENTE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OFICINA_CLIENTE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FECHAFIL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FECHAFIL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PERIODOMED)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PERIODOMED)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CONDIC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CONDIC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CTACAMP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CTACAMP)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

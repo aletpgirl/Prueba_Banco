@@ -1,0 +1,118 @@
+﻿@model Prueba_Banco.Models.Ventas
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Ventas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CODGTE" class="control-label"></label>
+                <input asp-for="CODGTE" class="form-control" />
+                <span asp-validation-for="CODGTE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NOMGTE" class="control-label"></label>
+                <input asp-for="NOMGTE" class="form-control" />
+                <span asp-validation-for="NOMGTE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODCOOR" class="control-label"></label>
+                <input asp-for="CODCOOR" class="form-control" />
+                <span asp-validation-for="CODCOOR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NOMCOOR" class="control-label"></label>
+                <input asp-for="NOMCOOR" class="form-control" />
+                <span asp-validation-for="NOMCOOR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODVENTAS" class="control-label"></label>
+                <input asp-for="CODVENTAS" class="form-control" />
+                <span asp-validation-for="CODVENTAS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NOMVEND" class="control-label"></label>
+                <input asp-for="NOMVEND" class="form-control" />
+                <span asp-validation-for="NOMVEND" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CODNIVEL" class="control-label"></label>
+                <input asp-for="CODNIVEL" class="form-control" />
+                <span asp-validation-for="CODNIVEL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NOMNIVEL" class="control-label"></label>
+                <input asp-for="NOMNIVEL" class="form-control" />
+                <span asp-validation-for="NOMNIVEL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NIT_CLIENTE" class="control-label"></label>
+                <input asp-for="NIT_CLIENTE" class="form-control" />
+                <span asp-validation-for="NIT_CLIENTE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ITEM" class="control-label"></label>
+                <input asp-for="ITEM" class="form-control" />
+                <span asp-validation-for="ITEM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NOM_CLIENTE" class="control-label"></label>
+                <input asp-for="NOM_CLIENTE" class="form-control" />
+                <span asp-validation-for="NOM_CLIENTE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SEGMENTO" class="control-label"></label>
+                <input asp-for="SEGMENTO" class="form-control" />
+                <span asp-validation-for="SEGMENTO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GERENCIADO" class="control-label"></label>
+                <input asp-for="GERENCIADO" class="form-control" />
+                <span asp-validation-for="GERENCIADO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OFICINA_CLIENTE" class="control-label"></label>
+                <input asp-for="OFICINA_CLIENTE" class="form-control" />
+                <span asp-validation-for="OFICINA_CLIENTE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FECHAFIL" class="control-label"></label>
+                <input asp-for="FECHAFIL" class="form-control" />
+                <span asp-validation-for="FECHAFIL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PERIODOMED" class="control-label"></label>
+                <input asp-for="PERIODOMED" class="form-control" />
+                <span asp-validation-for="PERIODOMED" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CONDIC" class="control-label"></label>
+                <input asp-for="CONDIC" class="form-control" />
+                <span asp-validation-for="CONDIC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CTACAMP" class="control-label"></label>
+                <input asp-for="CTACAMP" class="form-control" />
+                <span asp-validation-for="CTACAMP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

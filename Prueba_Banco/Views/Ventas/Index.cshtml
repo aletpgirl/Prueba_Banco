@@ -1,0 +1,137 @@
+﻿@model IEnumerable<Prueba_Banco.Models.Ventas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CODGTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMGTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CODCOOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMCOOR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CODVENTAS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMVEND)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CODNIVEL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMNIVEL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NIT_CLIENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ITEM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOM_CLIENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SEGMENTO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GERENCIADO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OFICINA_CLIENTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FECHAFIL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PERIODOMED)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CONDIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CTACAMP)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODGTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOMGTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODCOOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOMCOOR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODVENTAS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOMVEND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODNIVEL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOMNIVEL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NIT_CLIENTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOM_CLIENTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SEGMENTO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GERENCIADO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OFICINA_CLIENTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FECHAFIL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PERIODOMED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CONDIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CTACAMP)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
